@@ -1,0 +1,37 @@
+ <html ng-app="todoApp">
+    <head>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="modules.js"></script>
+        
+        <script src="controllers.js"></script>
+        <script src="directives.js"></script>
+        <script src="services.js"></script>
+        
+
+    <style>
+    .input-group .ng-valid.ng-dirty{
+        border: solid 1px green;
+    }    
+    .input-group .ng-invalid.ng-dirty{
+        border: solid 1px red;
+    }
+
+    </style>    
+    </head>
+    <body ng-controller="todoCtrl">
+        <h1>Todo List </h1>
+
+        <todo-form></todo-form>
+
+        <hr>
+
+        <todo-item></todo-item>
+
+    </body>
+    
+</html>
